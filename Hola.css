@@ -1,0 +1,194 @@
+/* Global settings */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Impact', sans-serif; /* A bold, edgy font */
+}
+
+/* Body styling */
+body {
+    background-color: #111; /* Dark background for a scary atmosphere */
+    color: #eee;
+    font-size: 16px;
+    line-height: 1.6;
+    background-image: url('dark-background-texture.jpg'); /* Add a dark texture */
+    background-size: cover;
+    background-position: center;
+}
+
+/* Header styling */
+header {
+    background-color: #0a0a0a; /* Darker black */
+    padding: 20px 0;
+    text-align: center;
+    color: #61dafb; /* Neon blue for a striking look */
+    text-transform: uppercase;
+    letter-spacing: 4px;
+}
+
+header h1 {
+    font-size: 4em;
+    text-shadow: 4px 4px 10px rgba(0, 0, 0, 0.9); /* Deep shadow for a more "popping" effect */
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+header nav ul li {
+    margin: 0 25px;
+}
+
+header nav ul li a {
+    color: #ff0000; /* Blood red for a dangerous vibe */
+    text-decoration: none;
+    font-size: 1.5em;
+    letter-spacing: 2px;
+}
+
+header nav ul li a:hover {
+    color: #61dafb; /* Blue on hover for contrast */
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.9);
+}
+
+/* Hero section styling */
+.hero {
+    background-image: url('scary-hero-image.jpg'); /* Dark and scary background image */
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero h2 {
+    color: #ff0000; /* Blood red text */
+    font-size: 5em;
+    text-shadow: 3px 3px 10px rgba(0, 0, 0, 1);
+    text-align: center;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+}
+
+/* Main content area */
+main {
+    padding: 50px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Section styles */
+section {
+    margin-bottom: 50px;
+}
+
+section h2 {
+    font-size: 3em;
+    color: #ff0000;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 5px black;
+}
+
+section p {
+    font-size: 1.2em;
+    line-height: 1.8;
+    color: #aaa;
+    background: rgba(0, 0, 0, 0.7);
+    padding: 15px;
+    border-radius: 10px;
+}
+
+/* Card styling for products */
+.card {
+    background: #222;
+    border-radius: 10px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+    transition: transform 0.3s;
+    margin-bottom: 20px;
+    border: 2px solid #ff0000; /* Red border for an edgy effect */
+}
+
+.card:hover {
+    transform: scale(1.08);
+    box-shadow: 0 10px 25px rgba(255, 0, 0, 0.6);
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+}
+
+.card-content {
+    padding: 20px;
+}
+
+.card-content h3 {
+    font-size: 2em;
+    color: #61dafb;
+    text-shadow: 2px 2px 5px black;
+}
+
+.card-content p {
+    font-size: 1.2em;
+    color: #eee;
+}
+
+/* Button styling */
+button {
+    padding: 15px 30px;
+    background-color: #ff0000; /* Scary red */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+button:hover {
+    background-color: #000;
+    transform: scale(1.1);
+    color: #61dafb;
+}
+
+/* Footer */
+footer {
+    background-color: #0a0a0a;
+    color: #eee;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 40px;
+}
+
+footer p {
+    font-size: 1.2em;
+    letter-spacing: 2px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2.5em;
+    }
+
+    header nav ul {
+        flex-direction: column;
+    }
+
+    .hero h2 {
+        font-size: 3em;
+    }
+
+    .card {
+        margin-bottom: 20px;
+    }
+
+    main {
+        padding: 20px;
+    }
+}

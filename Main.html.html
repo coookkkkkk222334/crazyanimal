@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Te doxe 2030</title>
+    <style>
+        /* General page style */
+        body {
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: black;
+            color: red;
+            font-family: 'Courier New', Courier, monospace;
+            text-align: center;
+        }
+
+        /* Glitch effect */
+        h1 {
+            font-size: 3rem;
+            position: relative;
+            color: red;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            animation: glitch 2s infinite;
+        }
+
+        /* Typewriter effect */
+        .typewriter h2 {
+            font-size: 2rem;
+            overflow: hidden; 
+            border-right: .15em solid red;
+            white-space: nowrap;
+            letter-spacing: .15em; 
+            animation: typing 3.5s steps(40, end), blink-caret .75s step-end infinite;
+        }
+
+        @keyframes typing {
+            from { width: 0 }
+            to { width: 100% }
+        }
+
+        @keyframes blink-caret {
+            from, to { border-color: transparent }
+            50% { border-color: red; }
+        }
+
+        /* Glitch keyframes */
+        @keyframes glitch {
+            0% {
+                text-shadow: 2px 2px red;
+            }
+            25% {
+                text-shadow: -3px -3px white;
+            }
+            50% {
+                text-shadow: 3px 2px green;
+            }
+            75% {
+                text-shadow: -2px 4px blue;
+            }
+            100% {
+                text-shadow: 0px 0px white;
+            }
+        }
+
+        /* Adding a flicker animation to the background */
+        @keyframes flicker {
+            0%, 18%, 22%, 25%, 53%, 57%, 100% {
+                opacity: 1;
+            }
+            20%, 24%, 55% {
+                opacity: 0;
+            }
+        }
+
+        body {
+            animation: flicker 3s infinite;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1>Te doxe 2030</h1>
+        <div class="typewriter">
+            <h2>Emilio Fajardo Carrasquilla no me joda o...</h2>
+        </div>
+    </div>
+</body>
+</html>
